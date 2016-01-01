@@ -11,7 +11,7 @@
 #include "clock.h"
 
 #ifdef _MUX_2_1_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -30,7 +30,7 @@ void main() {
 #endif
 
 #ifdef _DEMUX_1_2_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -48,7 +48,7 @@ void main() {
 #endif
 
 #ifdef _MUX_4_1_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -76,7 +76,7 @@ void main() {
 #endif
 
 #ifdef _DEMUX_1_4_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;

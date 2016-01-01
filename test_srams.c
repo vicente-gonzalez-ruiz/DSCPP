@@ -13,7 +13,7 @@
 
 #ifdef _SRAM_BIT_
 #include "clock.h"
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
    int iters = 500;
@@ -37,7 +37,7 @@ void main() {
 #ifdef _SRAM_16x4_
 #include "clock.h"
 #include "random.h"
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int
@@ -67,7 +67,7 @@ in[1] in[2] in[3] out[0] out[1] out[2] out[3]");
 }
 #endif
 #ifdef _SRAM_16x4_B_
-void main() {
+int main() {
   int
     iters = 1000,
     i;

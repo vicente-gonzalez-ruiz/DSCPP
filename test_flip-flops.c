@@ -12,7 +12,7 @@
 #include "random.h"
 
 #ifdef _POSITIVE_DETECTOR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=100;
@@ -29,7 +29,7 @@ void main() {
 #endif
 
 #ifdef _NEGATIVE_DETECTOR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=100;
@@ -46,7 +46,7 @@ void main() {
 #endif
 
 #ifdef _NEGATIVE_GLICH_SUPRESSOR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=100;
@@ -63,7 +63,7 @@ void main() {
 #endif
 
 #ifdef _POSITIVE_GLICH_SUPRESSOR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=100;
@@ -80,7 +80,7 @@ void main() {
 #endif
 
 #ifdef _NEG_SR_FF_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=500;
@@ -99,7 +99,7 @@ void main() {
 #endif
 
 #ifdef _NEG_D_FF_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=200;
@@ -117,7 +117,7 @@ void main() {
 #endif
 
 #ifdef _NEG_JK_FF_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=2000;
@@ -136,7 +136,7 @@ void main() {
 #endif
 
 #ifdef _NEG_JK_FF_PC_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=8800;
@@ -157,7 +157,7 @@ void main() {
 #endif
 
 #ifdef _NEG_D_FF_PC_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=8800;
@@ -177,7 +177,7 @@ void main() {
 #endif
 
 #ifdef _PACO_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=1000;
@@ -202,7 +202,7 @@ void main() {
 #endif
 
 #ifdef _SR_FF_MS_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=200;
@@ -221,7 +221,7 @@ void main() {
 #endif
 
 #ifdef _JK_FF_MS_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=800;

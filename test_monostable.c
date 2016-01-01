@@ -8,7 +8,7 @@
 #include "gates.h"
 #include "monostable.h"
 
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iteraciones=500;

@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 #ifdef _AU_4BIN_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=5000;
@@ -28,7 +28,7 @@ void main() {
 }
 #endif
 #ifdef _AU_8BIN_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=2500;
@@ -46,7 +46,7 @@ void main() {
 #endif
 
 #ifdef _AD_4BIN_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=5000;
@@ -63,7 +63,7 @@ void main() {
 #endif
 
 #ifdef _AU_BCD_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=2000;
@@ -80,7 +80,7 @@ void main() {
 #endif
 
 #ifdef _AU_BCD_COUNTER_CLR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=3000;
@@ -97,7 +97,7 @@ void main() {
 #endif
 
 #ifdef _SU_4BIN_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=1000;
@@ -114,7 +114,7 @@ void main() {
 #endif
 
 #ifdef _SU_8BIN_COUNTER_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=2500;

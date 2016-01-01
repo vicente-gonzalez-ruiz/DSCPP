@@ -4,7 +4,7 @@
 #include "clock.h"
 
 #ifdef _DECOD_2_4_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -22,7 +22,7 @@ void main() {
 #endif
 
 #ifdef _DECOD_5_32_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -45,7 +45,7 @@ void main() {
 #endif
 
 #ifdef _DECOD_2_4_SEL_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=200;
@@ -64,7 +64,7 @@ void main() {
 #endif
 
 #ifdef _DECOD_5_32_SEL_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;

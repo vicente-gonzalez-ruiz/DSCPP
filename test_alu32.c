@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 #ifdef _ADDER_BIT_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -31,7 +31,7 @@ void main() {
 #endif
 
 #ifdef _ADDER_BIT_CLA_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -50,7 +50,7 @@ void main() {
 #endif
 
 #ifdef _ALU_BIT_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -74,7 +74,7 @@ void main() {
 #endif
 
 #ifdef _ALU_BIT_CLA_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -98,7 +98,7 @@ void main() {
 #endif
 
 #ifdef _ALU_MSBIT_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -136,7 +136,7 @@ int Bin2Dec(WIRE z[32]) {
   return value;
 }
 
-void main() {
+int main() {
   int i,j,k;
   WIRE a[32],b[32], // Bus de datos
     bnegate,op[2],  // Operaci'on aritm'etica
@@ -303,7 +303,7 @@ int Bin2Dec(WIRE z[32]) {
   return value;
 }
 
-void main() {
+int main() {
   int i,j,k;
   WIRE a[32],b[32], // Bus de datos
     bnegate,op[2],  // Operaci'on aritm'etica

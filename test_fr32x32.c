@@ -14,7 +14,7 @@
 #include "clock.h"
 
 #ifdef _FR_BIT_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iters = 1000;
@@ -40,7 +40,7 @@ void main() {
 #endif
 
 #ifdef _FR_32x32_
-void main() {
+int main() {
   int i,j,k;
   FR_32x32 fr;
   WIRE

@@ -4,12 +4,15 @@
 // Marzo 1998
 //
 #include <stdlib.h>
-#include <fstream.h>
+#include <fstream>
 #include <strings.h>
+#include <iostream>
 
 #define MAXUNSINT 65535
 #define MINLONG -2147483647
 #define MAXLONG 2147483647
+
+using namespace std;
 
 class BASEn 
 {
@@ -519,7 +522,7 @@ class Operacion
 
 //******************************* MAIN **************************************
 
-void main(int nargs,char *argv[]) 
+int main(int nargs,char *argv[]) 
 {
   if(nargs!=3) 
   {
@@ -528,7 +531,7 @@ void main(int nargs,char *argv[])
     cerr << "Jacobo Jimenez Martinez\n";
     exit(1);
   }
-  ifstream fin(argv[1], ios::in | ios::bin);
+  ifstream fin(argv[1], ios::in );
   if(!fin) 
   { 
     cerr << "Error(502): No se puede abrir archivo.\n";

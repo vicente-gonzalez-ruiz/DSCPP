@@ -9,7 +9,7 @@
 #include "clock.h"
 #include "print.h"
 
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=1;

@@ -1,10 +1,12 @@
-#include <iostream.h>
-#include <iomanip.h>
+#include <iostream>
+#include <iomanip>
 #include "gates.h"
 #include "clock.h"
 
+using namespace std;
+
 #ifdef _NOT_
-void main() {
+int main() {
   int iter=30;
   WIRE a=GND,b;
   NOT gate;
@@ -20,7 +22,7 @@ void main() {
 #endif
 
 #ifdef _AND_
-void main() {
+int main() {
   int iter=100;
   WIRE a=GND,b=GND,c=GND;
   AND gate;
@@ -38,7 +40,7 @@ void main() {
 #endif
 
 #ifdef _AND3_
-void main() {
+int main() {
   int iter=100;
   WIRE i[3],o;
   AND gate;
@@ -59,7 +61,7 @@ void main() {
 #endif
 
 #ifdef _AND3b_
-void main() {
+int main() {
   int iter=100;
   WIRE i0,i1,i2,o;
   AND gate;
@@ -81,7 +83,7 @@ void main() {
 #endif
 
 #ifdef _OR_
-void main() {
+int main() {
   int iter=100;
   WIRE a=GND,b=GND,c=GND;
   OR gate;
@@ -99,7 +101,7 @@ void main() {
 #endif
 
 #ifdef _OR3_
-void main() {
+int main() {
   int iter=100;
   WIRE i[3],o;
   OR gate;
@@ -119,7 +121,7 @@ void main() {
 #endif
 
 #ifdef _NAND_
-void main() {
+int main() {
   int iter=50;
   WIRE a=GND,b=GND,c=GND;
   NAND gate;
@@ -159,7 +161,7 @@ void main() {
 #endif
 
 #ifdef _NAND3_
-void main() {
+int main() {
   int iter=200;
   WIRE i[3],o;
   NAND gate;
@@ -180,7 +182,7 @@ void main() {
 #endif
 
 #ifdef _NAND3b_
-void main() {
+int main() {
   int iter=200;
   WIRE i0,i1,i2,o;
   i0=i1=i2=GND; o = GND;
@@ -201,7 +203,7 @@ void main() {
 #endif
 
 #ifdef _NOR_
-void main() {
+int main() {
   int iter=100;
   WIRE a=GND,b=GND,c=GND;
   NOR gate;
@@ -219,7 +221,7 @@ void main() {
 #endif
 
 #ifdef _NOR3_
-void main() {
+int main() {
   int iter=1000;
   WIRE i[3],o;
   NOR gate;
@@ -239,7 +241,7 @@ void main() {
 #endif
 
 #ifdef _XOR_
-void main() {
+int main() {
   int iter=100;
   WIRE a=GND,b=GND,c=GND;
   XOR gate;
@@ -257,7 +259,7 @@ void main() {
 #endif
 
 #ifdef _XOR3_
-void main() {
+int main() {
   int iter=1000;
   WIRE i[3],o;
   XOR gate;
@@ -277,7 +279,7 @@ void main() {
 #endif
 
 #ifdef _NXOR_
-void main() {
+int main() {
   int iter=100;
   WIRE a=GND,b=GND,c=GND;
   NXOR gate;
@@ -295,7 +297,7 @@ void main() {
 #endif
 
 #ifdef _NXOR3_
-void main() {
+int main() {
   int iter=1000;
   WIRE i[3],o;
   NXOR gate;
@@ -315,7 +317,7 @@ void main() {
 #endif
 
 #ifdef _BUFFER_Z_
-void main() {
+int main() {
   int iter=1000;
   WIRE i=GND,e=GND,o=GND;
   BUFFER_Z x;

@@ -12,7 +12,7 @@
 #include "clock.h"
 
 #ifdef _REG_8_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=3000,j;

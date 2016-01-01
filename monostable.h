@@ -9,5 +9,5 @@ class MONOSTABLE {
   int t_inestable;  /* Duraci'on del nivel inestable */
  public:
   MONOSTABLE(int t_inestable, int periodo);
-  void MONOSTABLE::run(WIRE &io);
+  void run(WIRE &io);
 };

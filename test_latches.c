@@ -10,7 +10,7 @@
 #include "clock.h"
 
 #ifdef _SR_LATCH_NOR_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -28,7 +28,7 @@ void main() {
 #endif
 
 #ifdef _SR_LATCH_NAND_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=500;
@@ -46,7 +46,7 @@ void main() {
 #endif
 
 #ifdef _D_LATCH_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=400;
@@ -63,7 +63,7 @@ void main() {
 #endif
 
 #ifdef _JK_LATCH_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=0;
@@ -81,7 +81,7 @@ void main() {
 #endif
 
 #ifdef _JK_LATCH_ENABLE_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=200;
@@ -100,7 +100,7 @@ void main() {
 #endif
 
 #ifdef _SR_LATCH_ENABLE_
-void main() {
+int main() {
   FILE *data=fopen("data","w");
   FILE *data_sdl=fopen("data.sdl","w");
   int iter=600;
