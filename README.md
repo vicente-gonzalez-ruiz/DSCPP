@@ -1,2 +1,2 @@
-# DSC-
+# DSCPP
 Digital Simulator in C++
